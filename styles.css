@@ -6,6 +6,7 @@
 }
 #main_container {
   max-width: 1500px;
+  width: 98%;
   margin: 50px auto;
 }
 #filter_container {
@@ -21,12 +22,16 @@
 #item_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: space-around;
   gap: 50px;
 }
 
 #item_container div {
   background-color: azure;
   width: 100%;
+  max-width: 300px;
+  margin: auto;
   height: 200px;
   border: 1px solid gray;
   border-radius: 4px;
@@ -58,4 +63,20 @@
 }
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  #item_container {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #item_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1324px) {
+  #item_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
