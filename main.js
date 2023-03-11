@@ -65,3 +65,31 @@ allBtn.addEventListener("click", (e) => {
   hidShow("all");
 });
 
+//  for internal use only for filtering
+// function activeBtnClick(text) {
+//   const allBtn = document.getElementsByClassName("item");
+//   for (let i = 0; i < allBtn.length; i++) {
+//     allBtn[i].style.backgroundColor = "white";
+//     allBtn[i].style.color = "black";
+//     allBtn[i].style.borderRadius = "4px";
+//   }
+//   const btn = document.getElementById(text);
+//   //   btn.classList.add("active");
+//   if (text === "all") {
+//     btn.style.backgroundColor = "gray";
+//     btn.style.color = "white";
+//   } else {
+//     btn.style.backgroundColor = text;
+//     btn.style.color = 'white';
+//   }
+// }
+// const colorList = ["all", "red", "green", "blue", "orange"];
+// let count = 0;
+// setInterval(() => {
+//   if (count >= 5) {
+//     count = 0;
+//   }
+//   activeBtnClick(colorList[count]);
+//   hidShow(colorList[count]);
+//   count += 1;
+// }, 1000);

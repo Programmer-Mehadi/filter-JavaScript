@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 .active {
-  background-color: darkblue;
+  background-color: gray;
   color: white;
   padding: 10px 10px;
   border-radius: 4px;
